@@ -1,0 +1,21 @@
+{
+  "name": "Sumaxer",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "^1.0.2"
+  },
+  "dependencies": {
+    "react": "^15.5.0",
+    "react-dom": "^15.5.0",
+    "react-redux": "^5.0.5",
+    "redux": "^3.5.2",
+    "shuffle-array": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
+  }
+}
