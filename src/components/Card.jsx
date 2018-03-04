@@ -4,8 +4,12 @@ const Card = ({ isTurned, onClick, number }) => {
     return (
         <div className="cardContainer" onClick={onClick}>
             <div className={isTurned ? "card turn":"card"}>
-                <div className="front">front</div>
-                <div className="back">{number}</div>
+                <figure className="front">
+                    <span>X</span>
+                </figure>
+                <figure className="back">
+                    <span>{number}</span>
+                </figure>
             </div>
         </div>
     );

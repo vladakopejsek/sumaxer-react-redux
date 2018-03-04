@@ -4,3 +4,7 @@ export const turnCard = (card) => ({
     number: card.number,
     card
 });
+
+export const reset = () => ({
+    type: 'RESET'
+});

@@ -1,6 +1,7 @@
 import StatsPresentational from '../components/Stats'
 
 import { connect } from 'react-redux'
+import { reset } from "../actions";
 
 const mapStateToProps = (state) => {
     return {
@@ -10,6 +11,17 @@ const mapStateToProps = (state) => {
     }
 };
 
-const Stats = connect(mapStateToProps)(StatsPresentational);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onResetClick: () => {
+            dispatch(reset())
+        }
+    }
+};
+
+const Stats = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(StatsPresentational);
 
 export default Stats;

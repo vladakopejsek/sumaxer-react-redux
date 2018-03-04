@@ -1,0 +1,25 @@
+$white: #FDFFFC;
+$darkBlue: #011627;
+$darkerBlue: #010C16;
+$blueGreen: #2EC4B6;
+$blueGreenDarker: #2AB3A6;
+
+@mixin basicSettings($color, $width) {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: $width;
+  background-color: $color;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin center {
+  margin: 0 auto;
+  display: table;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

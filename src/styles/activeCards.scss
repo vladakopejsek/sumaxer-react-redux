@@ -1,0 +1,7 @@
+@import "vars";
+
+#activeCards {
+  @include basicSettings($white, 20%);
+  display: inline-grid;
+  grid-template-columns: auto;
+}

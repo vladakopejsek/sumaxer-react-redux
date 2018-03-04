@@ -3,7 +3,7 @@ import React from 'react'
 
 const ActiveCards = ({ activeCards }) => (
     <ul id="activeCards">
-        {activeCards.map(number => (number !== null) ? <Card number={number} isTurned={true}/> : null)}
+        {activeCards.map(number => <Card number={number} isTurned={true}/>)}
     </ul>
 );
 

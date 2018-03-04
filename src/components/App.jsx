@@ -5,11 +5,9 @@ import Deck from '../containers/Deck'
 
 const App = () => (
     <div id="game">
+        <Stats/>
         <ActiveCards/>
-        <section id="board">
-            <Stats/>
-            <Deck/>
-        </section>
+        <Deck/>
     </div>
 );
 

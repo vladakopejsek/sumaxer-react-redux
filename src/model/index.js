@@ -11,7 +11,7 @@ class Model {
     }
 
     fill() {
-        for(let i = 1; i < 16; i++) {
+        for(let i = 1; i < 21; i++) {
             let card = {number: i, isTurned: false};
             this.cardsOnDeck.push(card);
             this.cardsOnDeck = shuffle(this.cardsOnDeck);

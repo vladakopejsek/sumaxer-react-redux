@@ -1,0 +1,52 @@
+@import "vars";
+
+.cardContainer {
+  display: block;
+  position: relative;
+  perspective: 500px;
+  color: $white;
+  font-size: 50px;
+
+  &:hover {
+    cursor: pointer;
+
+    .front {
+      background-color: $blueGreenDarker !important;
+    }
+  }
+
+  .turn {
+    transform: rotateY(180deg);
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 400ms ease-in-out;
+
+    figure {
+      margin: 0;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      transition: all 150ms ease-in-out;
+
+      span {
+        @include center;
+      }
+    }
+
+    .front {
+      background-color: $blueGreen;
+    }
+
+    .back {
+      background-color: $blueGreenDarker;
+      transform: rotateY(180deg);
+    }
+  }
+}
